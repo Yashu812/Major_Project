@@ -6,21 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- 
+    <!--
     - primary meta tag
   -->
     <title>Guidelines</title>
 
-    <!-- 
+    <!--
     - favicon
   -->
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.svg')}}" type="image/svg+xml">
 
-    <!-- 
+    <!--
     - custom css link
   -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/guidelines.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nicepage.css')}}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css')}}">
+
+     <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='js/jquery.js')}}" defer="">
+     </script>
+
+     <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='js/nicepage.js')}}" defer="">
+     </script>
 
     <!-- 
     - google font link
@@ -40,6 +47,8 @@
 </head>
 
 <body id="top">
+    <nav class="navbar"></nav>
+    <script src="{{ url_for('static', filename='js/nav.js')}}"></script>
 
     <main>
         <article>
@@ -47,8 +56,7 @@
             <!-- 
         - #SERVICE
       -->
-
-            <section class="section service" aria-label="service">
+      <section class="section service" aria-label="service">
                 <div class="container">
 
                     <img src="{{ url_for('static', filename='images/service-image.png')}}"
@@ -136,6 +144,24 @@
                     </ul>
 
                 </div>
+            </section>
+
+            <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-7ba5">
+                <div class="u-clearfix u-sheet u-sheet-1">
+                    <p class="u-small-text u-text u-text-variant u-text-1">Sample text. Click to select the Text
+                        Element.</p>
+                </div>
+            </footer>
+            <section class="u-backlink u-clearfix u-grey-80">
+                <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
+                    <span>Website Templates</span>
+                </a>
+                <p class="u-text">
+                    <span>created with</span>
+                </p>
+                <a class="u-link" href="" target="_blank">
+                    <span>Website Builder Software</span>
+                </a>.
             </section>
 </body>
 
