@@ -29,8 +29,8 @@
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-
 */
+
 .buttonstyle
 {
     display: block;
@@ -46,11 +46,11 @@
     text-transform: uppercase;
     font-size: 16px;
     letter-spacing: 1.3px;
-    -webkit-transition: 0.2s all;
-    transition: 0.2s all;
+   /* -webkit-transition: 0.2s all; */
+    transition-duration: 0.4s;
 }
 
-.buttonstyle:hover, .buttonstyle:focus {
+.buttonstyle:hover /*, .buttonstyle:focus */{
     background-color: #f9e79b;
     opacity: 0.9;
 }

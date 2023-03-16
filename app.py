@@ -38,14 +38,19 @@ def men1():
 def women():
     return render_template('women.html')
 
+
 @app.route('/women1')
 def women1():
     return render_template('women1.html')
 
+@app.route('/women2')
+def women2():
+    return render_template('women2.html')
+
+
 @app.route('/popup')
 def popup():
     return render_template('popup.html')
-
 
 @app.route('/upload', methods=['POST', 'GET'])
 def upload_image():
@@ -81,7 +86,7 @@ def upload_image_women():
         file2.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
         # print('upload_image filename: ' + filename)
         flash('Image successfully uploaded and displayed below')
-        return render_template('women.html', filename=filename)
+        return render_template('women2.html', filename=filename)
     else:
         flash('Allowed image types are - png, jpg, jpeg')
         return redirect(request.url)
@@ -92,9 +97,14 @@ def display_image(filename):
     # print('display_image filename: ' + filename)
     return redirect(url_for('static', filename='images/uploads/' + filename), code=301)
 
+
 @app.route('/guidelines')
 def guidelines():
     return render_template('guidelines.html')
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 
 if __name__ == "__main__":
     app.run(debug=True)

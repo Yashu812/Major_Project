@@ -14100,6 +14100,7 @@ div.u-video,
 .u-nav,
 .u-nav-item {
   position: relative;
+  background: #f5f5f5;
 }
 .u-nav {
   display: inline-block;
@@ -16733,6 +16734,7 @@ div.u-video,
 .u-sidenav-overflow {
   overflow: auto;
   position: absolute !important;
+  background: #f5f5f5;
   top: 0;
   bottom: 0;
   right: 0;

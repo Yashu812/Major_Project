@@ -6,3 +6,11 @@ function showPreview(event){
     preview.style.display = "block";
   }
 }
+
+function hrefFunction() {
+  windows.location.href = "{{ url_for('templates', filename='guidelines.html')}}";
+}
+
+function openPopup() {
+  document.getElementById("myPopup").style.display = "block";
+}
